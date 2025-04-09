@@ -8,6 +8,8 @@ int main(void) {
 
     if (guessed_number == NUM){
         std::cout << "GANASTE!!!\n";
+    } else {
+        std::cout << "No ganaste, intentalo de nuevo\n";
     }
 
     return 0;
