@@ -10,9 +10,8 @@ int main(int argc, char **argv){
     long n = std::stol(argv[1]);
     long Max_Prime_value = 0;
 
-    for (int ii = 2; ii <= n; ++ii){
-        while (n % ii == 0)
-        {
+    for (long ii = 2; ii <= n; ++ii){
+        while (n % ii == 0) {
         if (verifyPrime(ii)){
             Max_Prime_value = ii;
         }

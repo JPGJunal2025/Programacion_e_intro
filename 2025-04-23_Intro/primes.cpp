@@ -11,7 +11,7 @@ int main(void){
         if (isprime(ii)==true){
             sum += ii;
             
-        }
+        } 
     
     }
     std::cout <<sum << "\n";
