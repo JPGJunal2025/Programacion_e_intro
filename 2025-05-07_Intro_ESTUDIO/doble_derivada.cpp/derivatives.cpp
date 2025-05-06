@@ -3,6 +3,11 @@
 double forward_diff(double x, double h, fptr f) {
     return (f(x + h) - f(x)) / h;
 }
+
 double central_diff(double x, double h, fptr f) {
     return (f(x + h) - f(x - h)) / (2*h);
+}
+
+double second_derivative(double x, double h, fptr f) {
+    return (f(x + h) - 2*f(x) + f(x - h)) / (h*h);
 }
