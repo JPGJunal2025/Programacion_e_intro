@@ -2,7 +2,7 @@
 #include <iomanip>
 
 // Number of iterations for the approximation
-const int NUM_ITERATIONS = 10;
+const int NUM_ITERATIONS = 1;
 
 // Babylonian method to estimate square root
 double estimateSqrt(double S) {
