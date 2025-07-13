@@ -19,9 +19,9 @@ int main(void)
 
     //std::cout << richardson(-1.0, 1.0, 10, f, simpson, 4) << "\n";
 
-    std::cout << gauss2(-1.0, 1.0, f) << "\n";
+    //std::cout << gauss2(-1.0, 1.0, f) << "\n";
 
-    std::cout << gauss5(-1.0, 1.0, f) << "\n";
+    //std::cout << gauss5(-1.0, 1.0, f) << "\n";
 
     std::cout << gauss7(-1.0, 1.0, f) << "\n";
 

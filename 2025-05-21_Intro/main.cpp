@@ -1,24 +1,29 @@
-#include <string>
-#include <iostream>
 #include <vector>
+#include <iostream>
+#include <string>
 
-int main(int argc, char**argv) {
-    if (argc != 2) {
-        std::cerr << "Usage: " << argv[0] << " <size>\n";
-        return 1;
+int main(int argc , char **argv)
+{
+    // declare the vector
+    std::vector<double> data; 
+
+    // read the size from the command line
+    const int N = std::stoi(argv[1]); 
+
+    // resize the vector
+    data.resize(N, 0);
+
+    // initialize the data
+    for(int ii = 0; ii < N; ii++) {
+        data[ii] = ii;
     }
 
-    int size = std::atoi(argv[1]);
-    std::vector<double> x(size);
-
-    double sum = 0.0;
-    for (int i = 0; i < size; ++i) {
-        x[i] = i;
-        sum += x[i];
+    // compute the average
+    double suma = 0.0;
+    for(int ii = 0; ii < N; ii++) {
+        suma = suma + data[ii];
     }
-
-    double average = sum / size;
-    std::cout << "Average: " << average << "\n";
+    std::cout << suma/N << "\n";
 
     return 0;
 }
